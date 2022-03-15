@@ -1,0 +1,195 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Dev: <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>-->
+        <script type="text/javascript" src="src/quizlib.js"></script>
+        <script type="text/javascript" src="scripts/listening_2.js"></script>
+        <!-- Dev: <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">-->
+        <link rel="stylesheet" type="text/css" href="src/quizlib.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
+        
+        <title>Listening: Mass Media</title>
+    </head>
+
+    <body>
+        <!-- Quiz Results -->
+        <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+        <div id="quiz-1">
+            <h1>Task 1</h1>
+            <h2>1. Read about how three students use social media. Complete the sentences with the words from the box. </h2>
+            <!-- Question 1 -->
+            <hr>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><h3>updates&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; interactive &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;app &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;record&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; connect &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;GPS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; audio</h3></p>
+            <hr>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Student A:</strong> I can now talk with my friends and relatives using a free video chat (1) _______________ on my favourite social media. I can also (2) ____________ my own videos and send them to other people. I can even use a(n) (3) ____________ app to find my way around in a new place.</p>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Student B:</strong> I got an A on my English test last week. I&rsquo;m so proud because I worked so hard. I joined a(n) (4) __________________ online course taught by an experienced tutor. I also became a member of an online language community where I was able to (5) ____________ with native speakers, ask questions and practise speaking via (6) ____________ and video chat.</p>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Student C:</strong> I&rsquo;ve been using different social media sites for a year and they have really changed my life. I can connect with people I know and make new friends any time. I can also post (7) _________ on my projects and start an open discussion with my classmates.</p>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    1<input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    2<input type="text" name="q2">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    3<input type="text" name="q3">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    4<input type="text" name="q4">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    5<input type="text" name="q5">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    6<input type="text" name="q6">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    7<input type="text" name="q7">
+                </div>          
+            </div> 
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-2">
+            <h1>Task 2</h1>
+            <h2>Listen to a conversation between two students talking about language learning applications.</h2>
+            <div style="display: flex;justify-content: center; margin-bottom: 20px;">
+                <audio controls>
+                    <source src="./assets/audio/Listening 2.mp3" type="audio/ogg">
+                    <source src="./assets/audio/Listening 2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>      
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">Which of the following did they not talk about?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q1" value="1">Lan’s English test results</label></li>
+                        <li><label><input type="checkbox" name="q2" value="2">Nam’s birthday</label></li>
+                        <li><label><input type="checkbox" name="q3" value="3">Language-learning courses</label></li>
+                        <li><label><input type="checkbox" name="q4" value="4">Playing online games</label></li>
+                        <li><label><input type="checkbox" name="q5" value="5">Chatting online with native speakers</label></li>
+                        <li><label><input type="checkbox" name="q6" value="6">Writing a blog</label></li>
+                    </ul>                   
+                </div>
+            </div>
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-3">
+            <h1>Task 3</h1>
+            <h2>Listen to a conversation between two students talking about language learning applications.</h2> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. How does Lan learn new vocabulary?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Why does Lan like playing language games?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q2">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. How does Lan connect with native speakers of English?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q3">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">4. How did she create her flashcards?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q4">
+                </div>          
+            </div>
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div>
+        <button onclick="myFunction()" class="button">Show/Hide Audio script</button>
+        <div id="myDIV" style="display:none">
+            <blockquote>
+                <p style="margin: 0in 0in 8pt; line-height: 1.5; font-size: 15px; font-family: Calibri, sans-serif;"><strong><em><span style='font-family:"Arial",sans-serif;color:#222222;background:white;'>Audio script:</span></em></strong></p>
+                <p style="margin: 0in 0in 8pt; line-height: 1.5; font-size: 15px; font-family: Calibri, sans-serif;"><strong><span style='font-family:"Arial",sans-serif;color:#222222;background:white;'>Nam</span></strong><span style='font-family:"Arial",sans-serif;color:#222222;background:white;'>: Congratulations, Lan! You&apos;ve got an A on your English test! Lan: Thanks, Nam. I should really thank a few social networking sites that help me to improve my English.</span><span style='font-family:"Arial",sans-serif;color:#222222;'><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Nam</span></strong><span style="background:white;">: Sounds interesting! So how did you improve your English? Lan: First, I registered and created an account with my nickname. Then I downloaded some free language learning apps on my smartphone and started revising and learning new vocabulary on the go. I could practise while on the bus on my way to school or while jogging in the park.</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Nam</span></strong><span style="background:white;">: Wow! So you don&apos;t play online games anymore?</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Lan</span></strong><span style="background:white;">: Of course I do, but I focus on language games such as Scrabble and crossword puzzles.</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Nam</span></strong><span style="background:white;">: Really? I didn&apos;t know you were keen on these games.</span><br> <span style="background:white;">Aren&apos;t they boring?</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Lan</span></strong><span style="background:white;">: Not if you connect and compete with other online gamers.</span><br> <span style="background:white;">You can also make friends and have fun.</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Nam</span></strong><span style="background:white;">: Really? But you still need a tutor to explain things or correct your English if you make a mistake.</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Lan</span></strong><span style="background:white;">: Exactly. Some social networking sites help you to connect with native speakers so you can ask questions or have your writing drafts corrected.</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Nam</span></strong><span style="background:white;">: Sounds good! I saw that you uploaded some vocabulary and grammar flashcards on all your social media sites. How did you create them?</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Lan</span></strong><span style="background:white;">: I used a free programme available on my smartphone.</span><br> <span style="background:white;">I also used the recording feature to collect interesting samples from English TV and radio. Have you also seen my photos on my English blog?</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Nam</span></strong><span style="background:white;">: Yes, I have. Great photos!</span><br> <strong><span style='font-family:"Arial",sans-serif;background:white;'>Lan</span></strong><span style="background:white;">: Thanks.</span></span></p>
+            </blockquote>
+        </div>
+        <div id="quiz-4">
+            <h1>Task 4</h1>
+            <h2>What do you think about Lan's ways of improving her English? What can you learn from her experience? Write your short answer in the form below.</h2>
+            <div style="display: flex;justify-content: center;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-ujiR6Q8LmWMe5l1bl0yv0qOOlvHJW8HMyhhiIoaFpWoUFw/viewform?embedded=true" width="1000" height="800" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe> 
+            </div>           
+        </div>  
+    </body>
+</html>
+<!-- <style>
+    body {
+      background-image: url('https://i.ytimg.com/vi/MU3qrgR2Kkc/maxresdefault.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+</style> -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #75cbfd;
+  }
+  
+  .button:hover {
+    background-color: #75cbfd;
+    color: black;
+  }
+</style>

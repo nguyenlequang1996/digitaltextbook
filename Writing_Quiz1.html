@@ -1,0 +1,170 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Dev: <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>-->
+        <script type="text/javascript" src="src/quizlib.js"></script>
+        <script type="text/javascript" src="scripts/writing_1.js"></script>
+        <!-- Dev: <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">-->
+        <link rel="stylesheet" type="text/css" href="src/quizlib.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Writing: Urbanisation</title>
+    </head>
+
+    <body>
+        <!-- Quiz Results -->
+        <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+        <div id="quiz-1">
+            <h1>Task 1</h1>
+            <h2>1. Match the phrases in the box with the graphs (a-f).</h2>
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/writing_1.jpg"> 
+            </div>
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    a<input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    b<input type="text" name="q2">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    c<input type="text" name="q3">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    d<input type="text" name="q4">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    e<input type="text" name="q5">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    f<input type="text" name="q6">
+                </div>          
+            </div> 
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-2">
+            <h1>Task 2</h1>
+            <h2>Rewrite the sentences without changing their meaning.</h2>
+            <p style='margin-right:0in;margin-left:0in;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0in;margin-bottom:9.0pt;line-height:107%;background:white;'><strong><span style='font-family:"Arial",sans-serif;color:#222222;'>Examples</span></strong><span style='font-family:"Arial",sans-serif;color:#222222;'>:</span></p>
+            <ul style="list-style-type: disc;margin-left:0in;">
+                <li><span style='font-family:"Arial",sans-serif;color:#222222;'>The number of young people working on farms has decreased sharply over the past years.<br>&nbsp;*There has been a sharp decrease in the number of young people working on farms.</span></li>
+                <li><span style='font-family:"Arial",sans-serif;color:#222222;'>The number of urban inhabitants rose by 15% from 1990 to 1995.<br>&nbsp;* There was a rise of 15% in the number of urban inhabitants from 1990 to 1995.</span></li>
+            </ul>    
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. The migration of young people to big cities has risen dramatically.</div>
+                <div class="quizlib-question-answers">
+                    There <input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Due to shortages of jobs, there has been a decrease in the population in rural areas in the last 10 years.</div>
+                <div class="quizlib-question-answers">
+                    Due to shortages of jobs, the population <input type="text" name="q2">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. The urbanisation rate in Indonesia increased by over 30% from 1969 to 2009.</div>
+                <div class="quizlib-question-answers">
+                    There <input type="text" name="q3">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">4. There was a sharp rise in the rate of urbanisation in South Korea during the period between 1969 and 1989.</div>
+                <div class="quizlib-question-answers">
+                    The rate of urbanisation <input type="text" name="q4">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">5. The urbanisation rate in this city decreased slightly during the economic crisis in 2008.</div>
+                <div class="quizlib-question-answers">
+                    There was <input type="text" name="q5">
+                </div>          
+            </div>          
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-3">
+            <h1>Task 3</h1>
+            <h2>The line graph below shows the urbanisation rate in South Korea and Indonesia. Write a description (of about 150 words) of the trends in the graph. Submit your answer into the link below, then see what your friends have written.</h2>
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/writing_2.jpg"> 
+            </div> 
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/writing_3.jpg"> 
+            </div> 
+            <div style="display: flex;justify-content: center;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2At74aIQUHoEtmHcxXJ13N4V0fod6OyA9TFhTkBDIyUKKhg/viewform?embedded=true" width="1000" height="800" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+            </div>         
+        </div>
+    </body>
+</html>
+<!-- <style>
+    body {
+      background-image: url('https://i.ytimg.com/vi/MU3qrgR2Kkc/maxresdefault.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+</style> -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #75cbfd;
+  }
+  
+  .button:hover {
+    background-color: #75cbfd;
+    color: black;
+  }
+</style>

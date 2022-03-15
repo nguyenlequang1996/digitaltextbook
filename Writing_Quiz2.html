@@ -1,0 +1,160 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Dev: <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>-->
+        <script type="text/javascript" src="src/quizlib.js"></script>
+        <script type="text/javascript" src="scripts/writing_2.js"></script>
+        <!-- Dev: <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">-->
+        <link rel="stylesheet" type="text/css" href="src/quizlib.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Writing: Mass Media</title>
+    </head>
+
+    <body>
+        <!-- Quiz Results -->
+        <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+        <div id="quiz-4">
+            <h1>Task 1</h1>
+            <h2>1. Do you know the difference between a graph and a chart; and how to describe a pie chart?</h2>
+            <div class="row">
+                <div class="column">
+                    <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:20px;font-family:"Calibri",sans-serif;'>&bull; Charts and graphs represent a series of data but they are different from each other. Graphs are mainly used to represent variation in values over a period of time. Charts are used to give information about the frequency of different quantities in a single pictorial representation.</p>
+                    <p><span style='font-size:20px;line-height:107%;font-family:"Calibri",sans-serif;'>&bull; To describe a pie chart we should specify the information (content) and proportion of each segment, which can be measured in percentages (%) or fractions (e.g. one-third, a quarter).</span></p>      
+                </div>
+                <div class="column">
+                    <div style="display: flex;justify-content: center;">
+                        <img style="max-width: 100%;" alt="" src="./assets/images/writing_5.jpg"> 
+                    </div>     
+                </div>
+            </div>
+            </div> 
+        <div id="quiz-2">
+            <h1>Task 2</h1>
+            <h2>The pie chart below illustrates the forms of communication used by students in Intel Secondary School. Complete the description with the words in the box.</h2>
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/writing_4.jpg"> 
+            </div>      
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:20px;font-family:"Calibri",sans-serif;'>The pie chart shows the preferred forms of communication recorded in a survey carried out in Intel Secondary School in August 2014. Following is a brief description of the students&rsquo; (1) _______________. Social networking is (2) _________ as the most preferred form of communication with a (3) ____________________ of 27%. Mobile phone ranks the second at 23%. Emailing is closely (4) __________________________ with instant messaging at 17% each. The least is face-to- face socialising, which is given 1% less than emailing and instant messaging.</p>
+            <p><span style='font-size:20px;line-height:107%;font-family:"Calibri",sans-serif;'>To conclude, the (5) ________ mode of communication for the students at Intel Secondary School is social networking. Of all the other forms &ndash; mobile phone talking, emailing, face-to-face socialising and instant messaging &ndash; students use face-to-face socialising (6) ______________.&nbsp;</span></p>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    (1)<input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    (2)<input type="text" name="q2">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    (3)<input type="text" name="q3">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    (4)<input type="text" name="q4">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    (5)<input type="text" name="q5">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    (6)<input type="text" name="q6">
+                </div>          
+            </div> 
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-3">
+            <h1>Task 3</h1>
+            <h2>Study the pie chart and write a paragraph of 130-160 words to describe it.</h2>  
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/writing_6.jpg"> 
+            </div>
+            <!-- <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/writing_7.jpg"> 
+            </div>  -->
+            <div style="display: flex;justify-content: center;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnPSkZ2RsTCYjh-cpQf28_nYrPVm5zyjBgPX_yuMn-XawIKQ/viewform?embedded=true" width="1000" height="800" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+            </div> 
+        </div> 
+    </body>
+</html>
+<!-- <style>
+    body {
+      background-image: url('https://i.ytimg.com/vi/MU3qrgR2Kkc/maxresdefault.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+</style> -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #75cbfd;
+  }
+  
+  .button:hover {
+    background-color: #75cbfd;
+    color: black;
+  }
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+</style>
+

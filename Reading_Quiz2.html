@@ -1,0 +1,187 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Dev: <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>-->
+        <script type="text/javascript" src="src/quizlib.js"></script>
+        <script type="text/javascript" src="scripts/main_reading_2.js"></script>
+        <!-- Dev: <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">-->
+        <link rel="stylesheet" type="text/css" href="src/quizlib.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
+        
+        <title>Reading: Mass Media</title>
+    </head>
+
+    <body>
+        <!-- Quiz Results -->
+        <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+        <div id="quiz-1">
+            <h1>Task 1</h1>
+            <h2>Put the words and phrases related to the mass media in three groups: print, television and the Internet. Use a dictionary to look up unfamiliar words.</h2>
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/massmediaquiz1.jpg"> 
+            </div>           
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Print</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Television</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q2">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. The Internet</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q3">
+                </div>          
+            </div>          
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-2">
+            <h1>Task 2</h1>
+            <h2>Quickly read the text and choose the best heading.</h2>
+            <blockquote style="background-color: white;">
+                <div style="display: flex;justify-content: center;">
+                    <img style="max-width: 100%;" alt="" src="./assets/images/massmedia.png"> 
+                </div>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Arial",sans-serif;color:#222222;background:white;'>The mass media are means of communication, such as books, newspapers, recordings, radio, movies, television, mobile phones and the Internet, that can reach a large audience.</span><span style='font-family:"Arial",sans-serif;color:#222222;'><br> <br> <span style="background:white;">Although the first printed books had appeared long before in China, the term <em>&lsquo;mass media&rsquo;</em> we use today was coined with the creation of print media, which started in Europe in the Middle Ages. This is also considered the first example of mass media due to the large number of readers then.</span><br> <br> <span style="background:white;">Since the mid-twentieth century new technologies have been developed, which helped to diversify mass media and make them an inseparable part of our lives. The role of the mass media is not only to entertain and amuse the masses. Its most important role is to provide information and news about events in different parts of the world as they occur. Educating people about their rights and responsibilities is another function of mass media.</span><br> <br> <span style="background:white;">Until recently, mass media forms were classified into six categories according to the sequence of</span> <span style="background:white;">their advent: print, recordings, cinema, radio, television and the Internet. Each form has its own characteristic content types, creative artists and business models. In the early 21st century, with the explosion of mobile communication technology, the mobile phone has emerged as a new and unique media channel. Video and computer games have also developed into a mass media form.</span><br> <br> <span style="background:white;">The Internet and mobile communication is now the most popular means of receiving information and interacting with people through email, instant messaging, apps, search engines, blogs, social networks and other services. Most print and broadcast media have a presence on the web by having video adverts or Quick Response Codes (QR Codes) that link to specific websites.</span><br> <br> <span style="background:white;">Each form of mass media has had an important impact on society, for example, books have helped people to educate themselves while newspapers have recorded daily events. Magazines were the first visual medium before the advent of television, which together with radio, brought entertainment and news programmes into people&apos;s homes. However, all these media had to change and adapt to the advent of the Internet and Digital Media Age. New digital media forms are more personal and social as they allow people to connect with each other, collaborate and share information and personalise their experiences.</span></span></p>
+            </blockquote>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">The best heading for the text is:</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a">The history of print media</label></li>
+                        <li><label><input type="radio" name="q1" value="b">Forms of mass media</label></li>
+                        <li><label><input type="radio" name="q1" value="c">The advent of the Digital Media Age</label></li>
+                        <li><label><input type="radio" name="q1" value="d">Means of mobile communication</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-3">
+            <h1>Task 3</h1>
+            <h2>Match each of the following words with its meaning. Use a dictionary if necessary.</h2>
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/massmediaquiz2.jpg"> 
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    1<input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    2<input type="text" name="q2">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    3<input type="text" name="q3">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    4<input type="text" name="q4">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    5<input type="text" name="q5">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    6<input type="text" name="q6">
+                </div>          
+            </div> 
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-4">
+            <h1>Task 4</h1>
+            <h2>Read the text again. Decide if the following statements are true (T), false (F), or not given (NG).</h2>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Mobile phones and the Internet are the only forms of mass media.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a">True</label></li>
+                        <li><label><input type="radio" name="q1" value="b">False</label></li>
+                        <li><label><input type="radio" name="q1" value="c">Not given</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. The role of mass media is to entertain, amuse, inform, educate and unite people.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q2" value="a">True</label></li>
+                        <li><label><input type="radio" name="q2" value="b">False</label></li>
+                        <li><label><input type="radio" name="q2" value="c">Not given</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. The mobile phone is regarded as a unique means of communication.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q3" value="a">True</label></li>
+                        <li><label><input type="radio" name="q3" value="b">False</label></li>
+                        <li><label><input type="radio" name="q3" value="c">Not given</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">4. People nowadays prefer instant messaging and social networking to emails.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q4" value="a">True</label></li>
+                        <li><label><input type="radio" name="q4" value="b">False</label></li>
+                        <li><label><input type="radio" name="q4" value="c">Not given</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">5. Only digital media have influenced people’s lives and society.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q5" value="a">True</label></li>
+                        <li><label><input type="radio" name="q5" value="b">False</label></li>
+                        <li><label><input type="radio" name="q5" value="c">Not given</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+    </body>
+</html>
+<!-- <style>
+    body {
+      background-image: url('https://i.ytimg.com/vi/MU3qrgR2Kkc/maxresdefault.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+</style> -->

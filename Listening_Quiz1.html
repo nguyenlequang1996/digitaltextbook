@@ -1,0 +1,210 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Dev: <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>-->
+        <script type="text/javascript" src="src/quizlib.js"></script>
+        <script type="text/javascript" src="scripts/listening_1.js"></script>
+        <!-- Dev: <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">-->
+        <link rel="stylesheet" type="text/css" href="src/quizlib.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Listening: Urbanisation</title>
+    </head>
+
+    <body>
+        <!-- Quiz Results -->
+        <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+        <div id="quiz-1">
+            <h1>Task 1</h1>
+            <h2>1. Match the words with their meanings.</h2>
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/listening_1.jpg"> 
+            </div>
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    1<input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    2<input type="text" name="q2">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    3<input type="text" name="q3">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    4<input type="text" name="q4">
+                </div>          
+            </div> 
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="quizlib-question-answers">
+                    5<input type="text" name="q5">
+                </div>          
+            </div> 
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-2">
+            <h1>Task 2</h1>
+            <h2>Listen to a talk about urbanisation and choose the best title for it.</h2>
+            <div style="display: flex;justify-content: center; margin-bottom: 20px;">
+                <audio controls>
+                    <source src="./assets/audio/Listening 1.mp3" type="audio/ogg">
+                    <source src="./assets/audio/Listening 1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>      
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">The best title is:</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a">Causes of urbanisation</label></li>
+                        <li><label><input type="radio" name="q1" value="b">Pros and cons of urbanisation</label></li>
+                        <li><label><input type="radio" name="q1" value="c">How to reduce the negative impact of urbanisation</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-3">
+            <h1>Task 3</h1>
+            <h2>Listen again and choose the best option to complete the sentences.</h2>  
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">Thanks to the process of urbanisation, people from rural areas have access to ______ jobs, education and health care.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a">better-paid</label></li>
+                        <li><label><input type="radio" name="q1" value="b">badly paid</label></li>
+                        <li><label><input type="radio" name="q1" value="c">prestigious</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">After moving to cities, rural people become less _____.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q2" value="a">traditional</label></li>
+                        <li><label><input type="radio" name="q2" value="b">conservative</label></li>
+                        <li><label><input type="radio" name="q2" value="c">progressive</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">Many people benefit from urbanisation, but not everyone has the opportunity to _____.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q3" value="a">receive a good education</label></li>
+                        <li><label><input type="radio" name="q3" value="b">get a high-paying salary</label></li>
+                        <li><label><input type="radio" name="q3" value="c">find stable employment</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">The shortage of accommodation in big cities can result in ______ with no sanitation or clean water.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q4" value="a">low-cost houses</label></li>
+                        <li><label><input type="radio" name="q4" value="b">development of high-cost housing</label></li>
+                        <li><label><input type="radio" name="q4" value="c">creation of very poor areas</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">The shift of workers from agriculture to industries can lead to _____ in food production.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q5" value="a">a fall</label></li>
+                        <li><label><input type="radio" name="q5" value="b">a rise</label></li>
+                        <li><label><input type="radio" name="q5" value="c">a fluctuation</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <button onclick="myFunction()" class="button">Show/Hide Audio script</button>
+        <div id="myDIV" style="display:none">
+            <blockquote>
+                <p style="margin: 0in 0in 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><strong><em><span style='font-family:"Arial",sans-serif;'>Audio script</span></em></strong></p>
+                <p style="margin: 0in 0in 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style='font-family:"Arial",sans-serif;'>Hello, everyone. Last week, we talked about the cause of urbanisation. Today, I&apos;ll discuss its advantages and disadvantages.</span></p>
+                <p style="margin: 0in 0in 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style='font-family:"Arial",sans-serif;'>Urbanisation can bring about a lot of benefits. It can offer people from rural areas not only opportunities for better-paid jobs, but also access to schools, hospitals and other social services. As a result, people&apos;s overall standard of living can improve.</span></p>
+                <p style="margin: 0in 0in 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style='font-family:"Arial",sans-serif;'>People in rural areas tend to be more conservative and follow old-fashioned practices like child marriage and gender discrimination. The process of urbanisation can actually change their mindset and help them to accept more progressive ideas.</span></p>
+                <p style="margin: 0in 0in 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style='font-family:"Arial",sans-serif;'>However, there are also some obvious disadvantages. High rates of urbanisation can contribute to more crime in big cities. Although many people benefit, not all get the opportunity of a good and stable job. Unemployed, people are more likely to engage in robbery, kidnapping, murder and other illegal activities. Another problem caused by urbanisation is the shortage of affordable housing in big cities, which can result in growth of slums with no sanitation or drinking water. In addition, urbanisation leads to the shift of the working population from agriculture to industries. Labour shortages in rural areas are likely to result in a decrease in agricultural and food production as well.</span></p>
+                <p style="margin: 0in 0in 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style='font-family:"Arial",sans-serif;'>To sum up urbanisation can bring social and health benefits; however, it also has its own drawbacks. I&apos;ve only discussed some of them. If you have any questions or comments, please feel free to raise them and I&apos;ll try my best to answer them.</span></p>
+            </blockquote>
+        </div>      
+        <div id="quiz-4">
+            <h1>Task 4</h1>
+            <h2>Read the statements in 3 again. Do you agree or disagree with them? Give examples to support your point of view.</h2>
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"></div>
+                <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/padlets/c0942iq8f303kghc" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://resources.padletcdn.com/assets/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Made with Padlet"></a></div></div>
+            </div>   
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+        </div> 
+    </body>
+</html>
+<!-- <style>
+    body {
+      background-image: url('https://i.ytimg.com/vi/MU3qrgR2Kkc/maxresdefault.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+</style> -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #75cbfd;
+  }
+  
+  .button:hover {
+    background-color: #75cbfd;
+    color: black;
+  }
+</style>

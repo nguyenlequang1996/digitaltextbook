@@ -1,0 +1,114 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Dev: <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>-->
+        <script type="text/javascript" src="src/quizlib.js"></script>
+        <script type="text/javascript" src="scripts/speaking_1.js"></script>
+        <!-- Dev: <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">-->
+        <link rel="stylesheet" type="text/css" href="src/quizlib.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
+        
+        <title>Speaking: Urbanisation</title>
+    </head>
+
+    <body>
+        <!-- Quiz Results -->
+        <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+        <div id="quiz-1">
+            <h1>Task 1</h1>
+            <h2>Read a conversation between two friends about life in big cities, then look at the features underlined. Are they positive or negative?</h2>
+            <blockquote>
+                <p style="margin: 0in 0in 9pt 0.5in; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif; text-indent: -0.5in; background: white; text-align: justify;"><strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>Minh</span></strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>: Ha, I don&apos;t know why so many people are moving from their home villages to big &nbsp; cities these days! They&apos;ve <strong>(a)</strong><u>become so overcrowded</u>.</span></p>
+                <p style="margin: 0in 0in 9pt 0.5in; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif; text-indent: -0.5in; background: white; text-align: justify;"><strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>Ha</span></strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>: Yeah, I agree. They&apos;re really overpopulated. But lots of people still want to become city dwellers.</span></p>
+                <p style="margin: 0in 0in 9pt 0.5in; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif; text-indent: -0.5in; background: white; text-align: justify;"><strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>Minh</span></strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>: Well, I&apos;m quite happy in my home village. It&apos;s important that some people stay in rural areas and work in agriculture.</span></p>
+                <p style="margin: 0in 0in 9pt 0.5in; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif; text-indent: -0.5in; background: white; text-align: justify;"><strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>Ha</span></strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>: But <strong>(b)</strong><u>there are more employment opportunities</u> in the city. Don&apos;t you want to <strong>(c)</strong><u>get a high-paid job in an office</u> instead of working on parents&apos; farm? Your <strong>(d)</strong><u>standard of living will higher in the city</u>.</span></p>
+                <p style="margin: 0in 0in 9pt 0.5in; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif; text-indent: -0.5in; background: white; text-align: justify;"><strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>Minh</span></strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>: I&apos;m not sure; not everyone is lucky. Big cities flooded with people from rural areas. <strong>(e)</strong><u>Many of them are jobless</u> and <strong>(f)</strong><u>have to live in slums</u> rather live in my village.</span></p>
+                <p style="margin: 0in 0in 9pt 0.5in; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif; text-indent: -0.5in; background: white; text-align: justify;"><strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>Ha</span></strong><span style='font-size:16px;font-family:"Arial",sans-serif;color:#222222;'>: You&apos;re right. It&apos;s essential that the govern should build big cities and upgrade the infrastructure in rural areas.</span></p>
+            </blockquote>
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Positive features</div>
+                <div class="quizlib-question-answers">
+                    <li><label><input type="checkbox" name="q1" value="a">a</label></li>
+                    <li><label><input type="checkbox" name="q1" value="b">b</label></li>
+                    <li><label><input type="checkbox" name="q1" value="c">c</label></li>
+                    <li><label><input type="checkbox" name="q1" value="d">d</label></li>
+                    <li><label><input type="checkbox" name="q1" value="e">e</label></li>
+                    <li><label><input type="checkbox" name="q1" value="f">f</label></li>
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Negative features</div>
+                <div class="quizlib-question-answers">
+                    <li><label><input type="checkbox" name="q2" value="a">a</label></li>
+                    <li><label><input type="checkbox" name="q2" value="b">b</label></li>
+                    <li><label><input type="checkbox" name="q2" value="c">c</label></li>
+                    <li><label><input type="checkbox" name="q2" value="d">d</label></li>
+                    <li><label><input type="checkbox" name="q2" value="e">e</label></li>
+                    <li><label><input type="checkbox" name="q2" value="f">f</label></li>
+                </div>          
+            </div>      
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-2">
+            <h1>Task 2</h1>
+            <div style="display: flex;justify-content: center;">
+                <img style="max-width: 100%;" alt="" src="./assets/images/speaking1_urban.jpg"> 
+            </div>
+            <h2>Look at these features of city life. Which one is positive?</h2>
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">Positive features</div>
+                <div class="quizlib-question-answers">
+                    <li><label><input type="checkbox" name="q1" value="a">Noisy</label></li>
+                    <li><label><input type="checkbox" name="q1" value="b">Job opportunities</label></li>
+                    <li><label><input type="checkbox" name="q1" value="c">Densely populated</label></li>
+                    <li><label><input type="checkbox" name="q1" value="d">Traffic congestion</label></li>
+                    <li><label><input type="checkbox" name="q1" value="e">Efficient services</label></li>
+                    <li><label><input type="checkbox" name="q1" value="f">Air pollution</label></li>
+                    <li><label><input type="checkbox" name="q1" value="g">Severe shortage of housing</label></li>
+                </div>          
+            </div>   
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div> 
+        <div id="quiz-3">
+            <h1>Task 3</h1>
+            <h2>Time to speak &#128266</h2>
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title"><b>Think about the positive and negative features of city life and decide if you want to live in an urban or rural area. What are your reasons? Use the ideas given below or your own ideas. </b><br><br><i>Present your decision by uploading your video by click <a href="https://drive.google.com/drive/folders/1Prxhdz9qTm6528X3dQGtzHne19vDP8a4?usp=sharing">here</a>, then see what others’ opinions. You can find my model video in the file given.</i></div>
+                <p><strong>Reasons for living in a big city</strong></p>
+                <p>- more employment/job opportunities</p>
+                <p>- chances to get high-paying jobs</p>
+                <p>- higher living standard</p>
+                <p>- efficient services</p>
+                <p>- sports facilities</p>
+                <p>- better schools ...</p>
+                <p><strong>Reasons for going back to live in rural areas</strong></p>
+                <p>- cheaper cost of living in rural areas</p>
+                <p>- friendly and helpful people</p>
+                <p>- little or no pollution</p>
+                <p>- low crime rate</p>
+            </div>   
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+        </div> 
+    </body>
+</html>
+<!-- <style>
+    body {
+      background-image: url('https://i.ytimg.com/vi/MU3qrgR2Kkc/maxresdefault.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+</style> -->

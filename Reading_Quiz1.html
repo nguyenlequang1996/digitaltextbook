@@ -1,0 +1,254 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Dev: <script type="text/javascript" src="scripts/quizlib.1.0.1.min.js"></script>-->
+        <script type="text/javascript" src="src/quizlib.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <!-- Dev: <link rel="stylesheet" type="text/css" href="styles/quizlib.min.css" media="screen">-->
+        <link rel="stylesheet" type="text/css" href="src/quizlib.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen">
+        
+        <title>Reading: Urbanisation</title>
+    </head>
+
+    <body>
+        <!-- Quiz Results -->
+        <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+        </div>
+
+        <!-- Quiz 1 -->
+        <div id="quiz-1">
+            <h1>Task 1</h1>
+            <h2>You are going to read a text about urbanisation. Predict whether the following statements are true (T) or false (F).</h2>
+            <!-- Question 1 -->
+            <!-- <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. What is the answer to life, the universe and everything?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>
+            </div> -->
+            <!-- Question 2 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Urbanisation happened first in more economically developed countries, then in less economically developed countries.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a">True</label></li>
+                        <li><label><input type="radio" name="q1" value="b">False</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Urbanisation has increased in rich countries since 1950s.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q2" value="a">True</label></li>
+                        <li><label><input type="radio" name="q2" value="b">False</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. Lack of resources in rural areas is one of the factors leading to urbanisation in less developed countries.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q3" value="a">True</label></li>
+                        <li><label><input type="radio" name="q3" value="b">False</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">4. The standard of living in cities and rural areas is more or less the same.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q4" value="a">True</label></li>
+                        <li><label><input type="radio" name="q4" value="b">False</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">5. By 2050, more than two thirds of the world’s population are expected to live in urban areas.</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q5" value="a">True</label></li>
+                        <li><label><input type="radio" name="q5" value="b">False</label></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Read the text and check your predictions in 1.</h2>
+            <blockquote style="background-color: white;">
+            <img style="max-width: 100%" alt="" src="./assets/images/urbanisation.jpg">            
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:18px;font-family:"Calibri",sans-serif;text-align:justify;'>Urbanisation is the process by which urban areas grow bigger as more and more people leave the countryside to live in towns and cities.</p>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:18px;font-family:"Calibri",sans-serif;text-align:justify;'>Before the 1950s, urbanisation mainly occurred in more economically developed countries (MEDCs). Rapid urbanisation happened during the period of industrialisation in Europe and North America in the nineteenth and early twentieth centuries. A lot of people left their home villages for urban areas hoping to find jobs in the rapidly expanding industries in big towns and cities. Since 1950s urbanisation has become slower in most MEDCs. Now, some of the biggest cities are losing population because people &nbsp;go back to live in rural areas. This is known as counter- urbanisation.</p>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:18px;font-family:"Calibri",sans-serif;text-align:justify;'>Since 1950, urbanisation has grown rapidly in LEDCs (Less Economically Developed Countries) in Asia, Africa and South America. Between 1950 and 1990, while the urban population in LEDCs doubled, the increase was less than half in developed countries.</p>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:18px;font-family:"Calibri",sans-serif;text-align:justify;'>There are various causes of urbanisation in LEDCs. Here are some major ones. First, people migrate to urban areas on a massive scale due to lack of resources in rural areas. Second, small farmers find it harder to make a living not just because of bad weather conditions such as drought, floods, or storms, but because they can&rsquo;t compete with large agricultural companies. These are considered &lsquo;push&rsquo; factors.</p>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:18px;font-family:"Calibri",sans-serif;text-align:justify;'>People living in rural areas are also &lsquo;pulled&rsquo; to cities, which are known to be places of financial centres, services, wealth and opportunities. Believing that the standard of living in urban areas will be higher than in rural areas, many people come to the city seeking their fortune.</p>
+            <p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:107%;font-size:18px;font-family:"Calibri",sans-serif;text-align:justify;'>Today, about half of the world&rsquo;s population lives in urban areas. Urbanisation has provided job opportunities, higher incomes and better access to health facilities and education. The urban population will continue to grow and it is expected that its proportion will increase to 70% by 2050.</p>
+            </blockquote>
+            <!-- Question 3 -->
+            <!-- <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. Which factors will contribute to the end of humanity as we know it?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q3" value="a"> Global warming</label></li>
+                        <li><label><input type="checkbox" name="q3" value="b"> The release of Linux 4.1.15</label></li>
+                        <li><label><input type="checkbox" name="q3" value="c"> Cats</label></li>
+                        <li><label><input type="checkbox" name="q3" value="d"> Advancements in artificial intelligence</label></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div>
+
+
+        <!-- Quiz 2 -->
+        <div id="quiz-2">
+            <h1>Task 2</h1>
+            <h2>Find the words in the text that have the following meanings. Write the words in the space provided.</h2>
+            <!-- Question 1 -->
+            <!-- <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Some question</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a"> some answer</label></li>
+                        <li><label><input type="radio" name="q1" value="b"> or is it this one?</label></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- Question 2 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. becoming larger in size or amount</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. the movement of people out of cities to the surrounding areas</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q2">
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. became twice as big or twice as many</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q3">
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">4. a rise in size, amount or degree</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q4">
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">5. go to live in another area or country</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q5">
+                </div>
+            </div>
+            <!-- Answer Button. Note that the showResults call is exactly the same as question 1. Nice!  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+        </div>
+
+        <!-- Quiz 3 -->
+        <div id="quiz-3">
+            <h1>Task 3</h1>
+            <h2>Read the text carefully. Answer the following questions.</h2>
+            <!-- Question 1 -->
+            <!-- <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. Some question</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a"> some answer</label></li>
+                        <li><label><input type="radio" name="q1" value="b"> or is it this one?</label></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- Question 2 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. What is urbanisation?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>          
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. What do MEDCs and LEDCs stand for?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q2">
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. Where did rapid urbanisation take place prior to 1950? Why?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q3">
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">4. What happened after 1950?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q4">
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">5. What are some of the ‘push’ factors of urbanisation?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q5">
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">6. Why are small farmers’ lives difficult?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q6">
+                </div>
+            </div>
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">7. What are some of the ‘pull’ factors of urbanisation?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q7">
+                </div>
+            </div>
+            <!-- Answer Button. Note that the showResults call is exactly the same as question 1. Nice!  -->
+            <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+            <!-- Question 1 -->
+            <!-- <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. What is 2 + 2?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>
+            </div> -->
+            <!-- Question 2 -->
+            <!-- <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Guess my number!</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q2" value="a"> 3</label></li>
+                        <li><label><input type="radio" name="q2" value="b"> 7</label></li>
+                        <li><label><input type="radio" name="q2" value="c"> 9</label></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- Answer Button. Note that the showResults call is exactly the same as question 1. Nice!  -->
+            <!-- <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button> -->
+        </div>
+        <div>
+            <h1>Task 4</h1>
+            <h2>Tell your friend: "How has your area been affected by urbanisation?" by sharing your answer into this link below, you can also find your friends' answers</h2>
+            <div style="display: flex;justify-content: center;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZyeOL8msI6Onb9-XkvqkUQf_G4tSSGzAcrT3oiZKO80SKtg/viewform?embedded=true" width="1000" height="800" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- <style>
+    body {
+      background-image: url('https://i.ytimg.com/vi/MU3qrgR2Kkc/maxresdefault.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+</style> -->
